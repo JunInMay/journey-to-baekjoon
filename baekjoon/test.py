@@ -1,3 +1,5 @@
-l = [1, 2, 3, 4]
-p = l.pop()
-print(l, p)
+c = [0, 2, 3]
+a = ''.join((map(str, c)))
+cc = 100
+print(cc > int(a))
+print(int(a))
