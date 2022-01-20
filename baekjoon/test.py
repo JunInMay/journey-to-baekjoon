@@ -1,5 +1,3 @@
-y = 7
-x = 8
-next_y = y+1 if x == 8 else y
-next_x = x+1 if x < 8 else 0
-print(next_y, next_x)
+txt = "10951, 10952, 10953, 11021, 11022, 11718, 11719, 11720, 11721, 2741, 2742, 2739, 1924, 8393, 10818, 2438, 2439, 2440, 2441, 2442, 2445, 2522, 2446, 10991, 10992".split(',')
+for t in txt:
+    print("https://www.acmicpc.net/problem/"+t.lstrip())
