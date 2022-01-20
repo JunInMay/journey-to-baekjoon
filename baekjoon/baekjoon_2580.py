@@ -16,6 +16,12 @@
 
 게임 시작 전 스도쿠 판에 쓰여 있는 숫자들의 정보가 주어질 때 모든 빈 칸이 채워진 최종 모습을 출력하는 프로그램을 작성하시오.
 """
+"""
+pypy로 제출
+배운거1 : return 하면 재귀 1스택만 backward로 갈 뿐 프로그램은 반복된다.(0으로 가득찬 input 제출시 여러개의 답을 제출하게 됨)
+배운거2 : exit(0) 프로그램 종료
+배운거3 : 백트래킹 기본 테크닉. 값변경 > 재귀 호출(1단계 더 deep하게) > 값복구 하면 괜히 deepcopy로 시복 올리지 않고 해결 가능.
+"""
 import sys
 sudoku = [list(map(int, sys.stdin.readline().rstrip().split())) for _ in range(9)]
 
