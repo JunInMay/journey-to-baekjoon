@@ -1,10 +1,5 @@
-
-li = [i for i in range(4, 1001)]
-
-true_li = []
-for l in li:
-    if l % 2 == 0:
-        true_li.append(l)
-print(len(true_li))
-for tl in true_li:
-    print(tl)
+y = 7
+x = 8
+next_y = y+1 if x == 8 else y
+next_x = x+1 if x < 8 else 0
+print(next_y, next_x)
