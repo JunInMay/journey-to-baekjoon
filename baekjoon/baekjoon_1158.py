@@ -15,6 +15,10 @@ N과 K가 주어지면 (N, K)-요세푸스 순열을 구하는 프로그램을 �
 그냥 의미가 없다. 어차피 구현해도 느리다고 틀린다.
 그냥 내장 자료구조를 쓰는게 낫지않을까.
 이번에도 큐 구현했다가 느리대서 그냥 deque import 해서 썼다. 빠르더라.
+근데 내가 deque를 몰라서 안쓰는 것도 아니고 알아도 그냥 구현해서 내 스스로 푸는게 보람차다고 생각했기 때문에 안쓰는 것인데,
+적당히 문제에서 요구하는대로 로지컬하기만 하면 맞다고 통과해 줄 정도로 시간을 주는게 합당하다고 생각한다.
+그렇지만? 절대 그렇게 해주지 않을 것이므로 어떠한 경우든 파이썬 같이 느려터진 언어로 문제를 풀 생각이라면
+배열 혹은 그 비슷한 것들을 이용할 때 무조건 deque를 써야한다고 가슴 깊이 새기고 되도록이면 빠르게 파이썬에서 손을 떼야겠다.
 """
 import sys
 
@@ -56,20 +60,22 @@ class MyQueue():
             self.l -= 1
         else: return None
         return result
-
+import sys
 from collections import deque
 
 N, K = map(int, sys.stdin.readline().rstrip().split())
-arr = [_ for _ in range(1, N+1)]
-deq = deque()
-
-mq = MyQueue()
-for elem in arr:
-    deq.append(elem)
+deq = deque([_ for _ in range(1, N+1)])
 
 result = []
+# 빠른코드
 for _ in range(N):
     deq.rotate(-(K-1))
     result.append(deq.popleft())
+
+# 느려터진코드
+# for _ in range(N):
+#     for i in range(K-1):
+#         deq.append(deq.popleft())
+#     result.append(deq.popleft())
 
 print("<"+", ".join(map(str, result))+">")
