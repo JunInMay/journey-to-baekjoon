@@ -4,3 +4,19 @@
 
 10진법의 수를 입력 받아서 -2진수를 출력하는 프로그램을 작성하시오.
 """
+import sys
+n = int(sys.stdin.readline().rstrip())
+
+result = []
+if n == 0:
+    print(0)
+    exit(0)
+while n:
+    r = abs(n%-2)
+    if r:
+        n = n // -2 + 1
+    else:
+        n = -(n // 2)
+    result.append(r)
+
+print("".join(map(str, result[::-1])))
