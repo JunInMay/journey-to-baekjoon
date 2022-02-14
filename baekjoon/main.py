@@ -1,7 +1,3 @@
-print(-13%-2)
-print(7//-2)
-
-print(str([1,2,3,4]))
-
-if -1:
-    print("asdf")
+l = [0, 1, 2, 3, 4]
+ln = len(l)
+print(l[ln-2:ln])
