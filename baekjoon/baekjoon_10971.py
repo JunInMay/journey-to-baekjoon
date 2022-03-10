@@ -15,29 +15,35 @@ computer science 분야에서 가장 중요하게 취급되는 문제 중 하나
 N과 비용 행렬이 주어졌을 때, 가장 적은 비용을 들이는 외판원의 순회 여행 경로를 구하는 프로그램을 작성하시오.
 """
 """
-실패
+실패...?
+그런데 자바로 해당 로직 그대로 구현하니까 통과함
+파이썬 손절하자..
 """
+
+
 import sys
-import itertools
 
-N = int(sys.stdin.readline().rstrip())
-costs = [list(map(int, sys.stdin.readline().rstrip().split())) for _ in range(N)]
+def seek_way(start, now, visited, cost):
+    if len(visited) == len(costs) and start == now:
+        candidates.append(cost)
+        return None
 
+    for i in range(len(costs[now])):
+        if i in visited:
+            continue
+        else:
+            if costs[now][i] != 0:
+                visited.append(i)
+                seek_way(start, i, visited, cost+costs[now][i])
+                visited.pop()
+
+
+costs = [list(map(int, sys.stdin.readline().rstrip().split())) for _ in range(int(sys.stdin.readline().rstrip()))]
 candidates = []
-res = float('inf')
-for cand in list(itertools.permutations([i for i in range(len(costs))])):
-    start = cand[len(costs)-1]
-    temp = 0
-    now = start
-    for i in cand:
-        if costs[now][i] != 0 and costs[now][i] < res:
-            temp += costs[now][i]
-            now = i
-    res = min(res, temp)
+for i in range(len(costs)):
+    seek_way(i, i, [], 0)
 
-print(res)
-
-
+print(candidates)
 
 """
 2
