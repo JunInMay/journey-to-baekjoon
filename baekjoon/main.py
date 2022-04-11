@@ -1,9 +1,23 @@
+import string
 import sys
 
-N = int(sys.stdin.readline())
-sequence = list(map(int, sys.stdin.readline().rstrip().split()))
-m = max(sequence)
+result = 0
+for _ in range(int(sys.stdin.readline().rstrip())):
+    check = [False for _ in range(26)]
+    count = 1
+    before = ""
+    for char in sys.stdin.readline().rstrip():
+        i = string.ascii_lowercase.index(char)
+        if before == "":
+            check[i] = True
+            before = char
+        if before != char:
+            if not check[i]:
+                check[i] = True
+                before = char
+            else:
+                count = 0
+                break
+    result += count
 
-r_sequence = list(map(lambda x: x/m*100, [x for x in sequence]))
-
-print(sum(r_sequence)/len(r_sequence))
+print(result)
