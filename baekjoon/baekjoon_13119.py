@@ -24,6 +24,9 @@ CH 주식회사의 직원 범수는, 고속도로의 모습이 담긴 큰 그림
 애석하게도 악당 재현이가 범수의 컴퓨터를 열어서 큰 그림을 휴지통에 넣고 비워버렸다.
 범수가 회사에 와서 이 사실을 알게 되면 큰 슬픔에 빠질 것이 분명하니, 여러분이 범수 대신 큰 그림을 그려주자.
 """
+"""
+띄어쓰기 문제
+"""
 import sys
 
 N, M, X = map(int, sys.stdin.readline().rstrip().split())
@@ -43,8 +46,13 @@ for i in range(M):
             if i % 3 == 2:
                 picture[point][i] = chr(124)
 
-for line in picture:
-    print(*line)
+for h in range(N):
+    for x in range(M):
+        print(picture[h][x], end='')
+    print('')
+
+# for line in picture:
+#     print(*line)
 
 """
 8 10 5
