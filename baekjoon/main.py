@@ -1,3 +1,4 @@
 import sys
-numbers = list(map(int, sys.stdin.readline().rstrip().split()))
-print(abs(numbers[1] - numbers[0]))
+
+number = (int(sys.stdin.readline().rstrip()) + int(sys.stdin.readline().rstrip())) % 12
+print(number if number != 0 else 12)
