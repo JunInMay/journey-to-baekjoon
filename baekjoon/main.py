@@ -1,4 +1,11 @@
 import sys
 
-number = (int(sys.stdin.readline().rstrip()) + int(sys.stdin.readline().rstrip())) % 12
-print(number if number != 0 else 12)
+A, B = map(int, sys.stdin.readline().rstrip().split())
+quotient, remainder = A//B , A%B
+
+if remainder < 0:
+    quotient += 1
+    remainder -= B
+
+print(quotient)
+print(remainder)
