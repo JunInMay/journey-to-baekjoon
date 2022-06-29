@@ -2,7 +2,7 @@
 ## [R.I.P PYTHON (~2022-06)]
 -  더 이상 파이썬으로 PS를 하지 않기로 함
 -  C++로 하고 싶었는데... 사정상 그러지 못하고 Java로 문제 풀이를 이어갈 예정 ![GitHub-Logo]([https://user-images.githubusercontent.com/86698037/176341522-83a4d930-286c-44fe-8a34-4d1b02153bac.png](https://user-images.githubusercontent.com/86698037/176342230-d5766f7b-e7cd-456d-8cee-1339a4734607.png))
-<img src="[https://user-images.githubusercontent.com/86698037/176341522-83a4d930-286c-44fe-8a34-4d1b02153bac.png](https://user-images.githubusercontent.com/86698037/176342230-d5766f7b-e7cd-456d-8cee-1339a4734607.png)" width="100" height="100"/>
+<img src="https://user-images.githubusercontent.com/86698037/176342230-d5766f7b-e7cd-456d-8cee-1339a4734607.png" width="100" height="100"/>
 
 #
 #### [사유]
