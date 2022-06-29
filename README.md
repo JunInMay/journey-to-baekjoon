@@ -1,7 +1,7 @@
 # 백준 풀이 기록 모음
 ## [R.I.P PYTHON (~2022-06)]
 -  더 이상 파이썬으로 PS를 하지 않기로 함
--  C++로 하고 싶었는데... 사정상 그러지 못하고 Java로 문제 풀이를 이어갈 예정 <img src="https://user-images.githubusercontent.com/86698037/176342230-d5766f7b-e7cd-456d-8cee-1339a4734607.png" height="10"/>
+-  C++로 하고 싶었는데... 사정상 그러지 못하고 Java로 문제 풀이를 이어갈 예정 <img src="https://user-images.githubusercontent.com/86698037/176342230-d5766f7b-e7cd-456d-8cee-1339a4734607.png" height="15"/>
 
 #
 #### [사유]
