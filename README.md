@@ -1,7 +1,7 @@
 # 백준 풀이 기록 모음
 ## [R.I.P PYTHON (~2022-06)]
 -  더 이상 파이썬으로 PS를 하지 않기로 함
--  C++로 하고 싶었는데... 사정상 그러지 못하고 Java로 문제 풀이를 이어갈 예정 ![GitHub-Logo](https://user-images.githubusercontent.com/86698037/176341522-83a4d930-286c-44fe-8a34-4d1b02153bac.png)
+-  C++로 하고 싶었는데... 사정상 그러지 못하고 Java로 문제 풀이를 이어갈 예정 ![GitHub-Logo](https://user-images.githubusercontent.com/86698037/176341522-83a4d930-286c-44fe-8a34-4d1b02153bac.png =100x)
 <img src="[https://github.com/JunInMay/journey-to-baekjoon/issues/1#issue-1288109190](https://user-images.githubusercontent.com/86698037/176341522-83a4d930-286c-44fe-8a34-4d1b02153bac.png)" width="50" height="50"/>
 
 #
